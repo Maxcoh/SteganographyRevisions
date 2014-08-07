@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB9B66BE19796C5A00967439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B66BD19796C5A00967439 /* Foundation.framework */; };
+		FB9B66C019796C5A00967439 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B66BF19796C5A00967439 /* CoreGraphics.framework */; };
+		FB9B66C219796C5A00967439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B66C119796C5A00967439 /* UIKit.framework */; };
+		FB9B66C819796C5A00967439 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB9B66C619796C5A00967439 /* InfoPlist.strings */; };
+		FB9B66CA19796C5A00967439 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B66C919796C5A00967439 /* main.m */; };
+		FB9B66CE19796C5A00967439 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B66CD19796C5A00967439 /* AppDelegate.m */; };
+		FB9B66D119796C5A00967439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9B66CF19796C5A00967439 /* Main.storyboard */; };
+		FB9B66D419796C5A00967439 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B66D319796C5A00967439 /* ViewController.m */; };
+		FB9B66D619796C5A00967439 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9B66D519796C5A00967439 /* Images.xcassets */; };
+		FB9B66DD19796C5A00967439 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B66DC19796C5A00967439 /* XCTest.framework */; };
+		FB9B66DE19796C5A00967439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B66BD19796C5A00967439 /* Foundation.framework */; };
+		FB9B66DF19796C5A00967439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B66C119796C5A00967439 /* UIKit.framework */; };
+		FB9B66E719796C5A00967439 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB9B66E519796C5A00967439 /* InfoPlist.strings */; };
+		FB9B66E919796C5A00967439 /* SteganographyTestDecodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B66E819796C5A00967439 /* SteganographyTestDecodeTests.m */; };
+		FB9B66F819796C8E00967439 /* Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B66F719796C8E00967439 /* Decoder.m */; };
+		FBF70FD11993C24F0005D918 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF70FD01993C24F0005D918 /* AppIcon76x76.png */; };
+		FBF70FD31993C29F0005D918 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF70FD21993C29F0005D918 /* AppIcon60x60.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB9B66E019796C5A00967439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB9B66B219796C5A00967439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB9B66B919796C5A00967439;
+			remoteInfo = SteganographyTestDecode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB9B66BA19796C5A00967439 /* SteganographyTestDecode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteganographyTestDecode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9B66BD19796C5A00967439 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB9B66BF19796C5A00967439 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB9B66C119796C5A00967439 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB9B66C519796C5A00967439 /* SteganographyTestDecode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SteganographyTestDecode-Info.plist"; sourceTree = "<group>"; };
+		FB9B66C719796C5A00967439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB9B66C919796C5A00967439 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB9B66CB19796C5A00967439 /* SteganographyTestDecode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SteganographyTestDecode-Prefix.pch"; sourceTree = "<group>"; };
+		FB9B66CC19796C5A00967439 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB9B66CD19796C5A00967439 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB9B66D019796C5A00967439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB9B66D219796C5A00967439 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB9B66D319796C5A00967439 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB9B66D519796C5A00967439 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB9B66DB19796C5A00967439 /* SteganographyTestDecodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteganographyTestDecodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9B66DC19796C5A00967439 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FB9B66E419796C5A00967439 /* SteganographyTestDecodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SteganographyTestDecodeTests-Info.plist"; sourceTree = "<group>"; };
+		FB9B66E619796C5A00967439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB9B66E819796C5A00967439 /* SteganographyTestDecodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteganographyTestDecodeTests.m; sourceTree = "<group>"; };
+		FB9B66F619796C8E00967439 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		FB9B66F719796C8E00967439 /* Decoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decoder.m; sourceTree = "<group>"; };
+		FBF70FD01993C24F0005D918 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon76x76.png; path = "../../../../Downloads/Strata Icon 2 [Rounded]/AppIcon76x76.png"; sourceTree = "<group>"; };
+		FBF70FD21993C29F0005D918 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon60x60.png; path = "../../../../Downloads/Strata Icon 2 [Rounded]/AppIcon60x60.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB9B66B719796C5A00967439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B66C019796C5A00967439 /* CoreGraphics.framework in Frameworks */,
+				FB9B66C219796C5A00967439 /* UIKit.framework in Frameworks */,
+				FB9B66BE19796C5A00967439 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9B66D819796C5A00967439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B66DD19796C5A00967439 /* XCTest.framework in Frameworks */,
+				FB9B66DF19796C5A00967439 /* UIKit.framework in Frameworks */,
+				FB9B66DE19796C5A00967439 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB27687419901525004E02CA /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		FB9B66B119796C5A00967439 = {
+			isa = PBXGroup;
+			children = (
+				FB9B66C319796C5A00967439 /* SteganographyTestDecode */,
+				FB9B66E219796C5A00967439 /* SteganographyTestDecodeTests */,
+				FB9B66BC19796C5A00967439 /* Frameworks */,
+				FB9B66BB19796C5A00967439 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB9B66BB19796C5A00967439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66BA19796C5A00967439 /* SteganographyTestDecode.app */,
+				FB9B66DB19796C5A00967439 /* SteganographyTestDecodeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB9B66BC19796C5A00967439 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66BD19796C5A00967439 /* Foundation.framework */,
+				FB9B66BF19796C5A00967439 /* CoreGraphics.framework */,
+				FB9B66C119796C5A00967439 /* UIKit.framework */,
+				FB9B66DC19796C5A00967439 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9B66C319796C5A00967439 /* SteganographyTestDecode */ = {
+			isa = PBXGroup;
+			children = (
+				FBF70FD01993C24F0005D918 /* AppIcon76x76.png */,
+				FBF70FD21993C29F0005D918 /* AppIcon60x60.png */,
+				FB27687419901525004E02CA /* iPad */,
+				FB9B66F519796C7D00967439 /* Classes */,
+				FB9B66F219796C6400967439 /* App Delegate */,
+				FB9B66F319796C6D00967439 /* Interface */,
+				FB9B66F419796C7600967439 /* View Controller */,
+				FB9B66D519796C5A00967439 /* Images.xcassets */,
+				FB9B66C419796C5A00967439 /* Supporting Files */,
+			);
+			path = SteganographyTestDecode;
+			sourceTree = "<group>";
+		};
+		FB9B66C419796C5A00967439 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66C519796C5A00967439 /* SteganographyTestDecode-Info.plist */,
+				FB9B66C619796C5A00967439 /* InfoPlist.strings */,
+				FB9B66C919796C5A00967439 /* main.m */,
+				FB9B66CB19796C5A00967439 /* SteganographyTestDecode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB9B66E219796C5A00967439 /* SteganographyTestDecodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66E819796C5A00967439 /* SteganographyTestDecodeTests.m */,
+				FB9B66E319796C5A00967439 /* Supporting Files */,
+			);
+			path = SteganographyTestDecodeTests;
+			sourceTree = "<group>";
+		};
+		FB9B66E319796C5A00967439 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66E419796C5A00967439 /* SteganographyTestDecodeTests-Info.plist */,
+				FB9B66E519796C5A00967439 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB9B66F219796C6400967439 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66CC19796C5A00967439 /* AppDelegate.h */,
+				FB9B66CD19796C5A00967439 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		FB9B66F319796C6D00967439 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66CF19796C5A00967439 /* Main.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		FB9B66F419796C7600967439 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66D219796C5A00967439 /* ViewController.h */,
+				FB9B66D319796C5A00967439 /* ViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		FB9B66F519796C7D00967439 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B66F619796C8E00967439 /* Decoder.h */,
+				FB9B66F719796C8E00967439 /* Decoder.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB9B66B919796C5A00967439 /* SteganographyTestDecode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9B66EC19796C5A00967439 /* Build configuration list for PBXNativeTarget "SteganographyTestDecode" */;
+			buildPhases = (
+				FB9B66B619796C5A00967439 /* Sources */,
+				FB9B66B719796C5A00967439 /* Frameworks */,
+				FB9B66B819796C5A00967439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteganographyTestDecode;
+			productName = SteganographyTestDecode;
+			productReference = FB9B66BA19796C5A00967439 /* SteganographyTestDecode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB9B66DA19796C5A00967439 /* SteganographyTestDecodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9B66EF19796C5A00967439 /* Build configuration list for PBXNativeTarget "SteganographyTestDecodeTests" */;
+			buildPhases = (
+				FB9B66D719796C5A00967439 /* Sources */,
+				FB9B66D819796C5A00967439 /* Frameworks */,
+				FB9B66D919796C5A00967439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB9B66E119796C5A00967439 /* PBXTargetDependency */,
+			);
+			name = SteganographyTestDecodeTests;
+			productName = SteganographyTestDecodeTests;
+			productReference = FB9B66DB19796C5A00967439 /* SteganographyTestDecodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB9B66B219796C5A00967439 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Brendan Barnes";
+				TargetAttributes = {
+					FB9B66B919796C5A00967439 = {
+						DevelopmentTeam = 3TPR3R8W93;
+					};
+					FB9B66DA19796C5A00967439 = {
+						TestTargetID = FB9B66B919796C5A00967439;
+					};
+				};
+			};
+			buildConfigurationList = FB9B66B519796C5A00967439 /* Build configuration list for PBXProject "SteganographyTestDecode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB9B66B119796C5A00967439;
+			productRefGroup = FB9B66BB19796C5A00967439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB9B66B919796C5A00967439 /* SteganographyTestDecode */,
+				FB9B66DA19796C5A00967439 /* SteganographyTestDecodeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB9B66B819796C5A00967439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B66D619796C5A00967439 /* Images.xcassets in Resources */,
+				FB9B66C819796C5A00967439 /* InfoPlist.strings in Resources */,
+				FB9B66D119796C5A00967439 /* Main.storyboard in Resources */,
+				FBF70FD11993C24F0005D918 /* AppIcon76x76.png in Resources */,
+				FBF70FD31993C29F0005D918 /* AppIcon60x60.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9B66D919796C5A00967439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B66E719796C5A00967439 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB9B66B619796C5A00967439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B66D419796C5A00967439 /* ViewController.m in Sources */,
+				FB9B66CE19796C5A00967439 /* AppDelegate.m in Sources */,
+				FB9B66F819796C8E00967439 /* Decoder.m in Sources */,
+				FB9B66CA19796C5A00967439 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9B66D719796C5A00967439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B66E919796C5A00967439 /* SteganographyTestDecodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB9B66E119796C5A00967439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB9B66B919796C5A00967439 /* SteganographyTestDecode */;
+			targetProxy = FB9B66E019796C5A00967439 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB9B66C619796C5A00967439 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9B66C719796C5A00967439 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FB9B66CF19796C5A00967439 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9B66D019796C5A00967439 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB9B66E519796C5A00967439 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9B66E619796C5A00967439 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB9B66EA19796C5A00967439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB9B66EB19796C5A00967439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB9B66ED19796C5A00967439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SteganographyTestDecode/SteganographyTestDecode-Prefix.pch";
+				INFOPLIST_FILE = "SteganographyTestDecode/SteganographyTestDecode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB9B66EE19796C5A00967439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SteganographyTestDecode/SteganographyTestDecode-Prefix.pch";
+				INFOPLIST_FILE = "SteganographyTestDecode/SteganographyTestDecode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FB9B66F019796C5A00967439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SteganographyTestDecode.app/SteganographyTestDecode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SteganographyTestDecode/SteganographyTestDecode-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SteganographyTestDecodeTests/SteganographyTestDecodeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FB9B66F119796C5A00967439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SteganographyTestDecode.app/SteganographyTestDecode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SteganographyTestDecode/SteganographyTestDecode-Prefix.pch";
+				INFOPLIST_FILE = "SteganographyTestDecodeTests/SteganographyTestDecodeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB9B66B519796C5A00967439 /* Build configuration list for PBXProject "SteganographyTestDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9B66EA19796C5A00967439 /* Debug */,
+				FB9B66EB19796C5A00967439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9B66EC19796C5A00967439 /* Build configuration list for PBXNativeTarget "SteganographyTestDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9B66ED19796C5A00967439 /* Debug */,
+				FB9B66EE19796C5A00967439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9B66EF19796C5A00967439 /* Build configuration list for PBXNativeTarget "SteganographyTestDecodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9B66F019796C5A00967439 /* Debug */,
+				FB9B66F119796C5A00967439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB9B66B219796C5A00967439 /* Project object */;
+}
