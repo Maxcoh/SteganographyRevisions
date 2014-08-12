@@ -12,7 +12,7 @@
 #import "Encoder.h"
 
 @interface ViewController: UIViewController <UINavigationControllerDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate,UIAlertViewDelegate, MFMailComposeViewControllerDelegate,
-UINavigationControllerDelegate>
+UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 

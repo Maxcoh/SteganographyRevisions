@@ -7,21 +7,21 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
 
-@implementation ViewController 
-
+@implementation ViewController
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	
 }
 
 - (void)didReceiveMemoryWarning
 {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -44,18 +44,18 @@
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    _image = [info objectForKey:UIImagePickerControllerOriginalImage];
     UIImage *newImage;
     [self dismissViewControllerAnimated:YES completion:NULL];
-    if(image.size.height > _imageView.frame.size.height || image.size.width > _imageView.frame.size.width){
-    if(image.size.width > image.size.height){
+    if(_image.size.height > _imageView.frame.size.height || _image.size.width > _imageView.frame.size.width){
+    if(_image.size.width > _image.size.height){
         float iWidth = _imageView.frame.size.width;
-        float ratio = iWidth/image.size.width;
+        float ratio = iWidth/_image.size.width;
         
-        float newHeight = image.size.height * ratio;
+        float newHeight = _image.size.height * ratio;
         
         UIGraphicsBeginImageContext(CGSizeMake(iWidth, newHeight));
-        [image drawInRect:CGRectMake(0, 0, iWidth, newHeight)];
+        [_image drawInRect:CGRectMake(0, 0, iWidth, newHeight)];
         newImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
@@ -63,12 +63,12 @@
     else
     {
         float iHeight = _imageView.frame.size.height;
-        float ratio = iHeight/image.size.height;
+        float ratio = iHeight/_image.size.height;
         
-        float newWidth = image.size.width * ratio;
+        float newWidth = _image.size.width * ratio;
         
         UIGraphicsBeginImageContext(CGSizeMake(newWidth, iHeight));
-        [image drawInRect:CGRectMake(0, 0, newWidth, iHeight)];
+        [_image drawInRect:CGRectMake(0, 0, newWidth, iHeight)];
         newImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
@@ -76,7 +76,7 @@
     _imageView.image = newImage;
     }
     else{
-        _imageView.image = image;
+        _imageView.image = _image;
     }
     
 }
@@ -85,7 +85,7 @@
     
     Decoder *decoder = [[Decoder alloc] init];
     
-    NSString *decodedText = [decoder decodeMessage:_imageView.image];
+    NSString *decodedText = [decoder decodeMessage:_image];
     _textView.text = decodedText;
 }
 @end

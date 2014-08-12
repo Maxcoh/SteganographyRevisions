@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-164" y="60"/>
         </scene>
-        <!--View Controller - Stegasaurus Rext Messaging-->
+        <!--View Controller - Strati-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bGH-Ba-lvm" secondAttribute="bottom" constant="3" id="1y0-gV-zD9"/>
                             <constraint firstItem="XGF-Lf-RQs" firstAttribute="top" secondItem="xXU-BE-BuX" secondAttribute="bottom" constant="8" id="BHC-2O-MYs"/>
@@ -80,7 +80,7 @@
                             <constraint firstAttribute="bottom" secondItem="XGF-Lf-RQs" secondAttribute="bottom" constant="47" id="lk5-Fj-dTq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Stegasaurus Rext Messaging" id="yqu-7L-1LT">
+                    <navigationItem key="navigationItem" title="Strati" id="yqu-7L-1LT">
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="7Ux-io-bQ4">
                             <connections>
                                 <action selector="camera:" destination="vXZ-lx-hvc" id="ZT4-hG-IbS"/>
@@ -94,6 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="60"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

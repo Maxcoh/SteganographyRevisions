@@ -18,11 +18,9 @@
     CFBitVectorRef stringBits = CFBitVectorCreate(NULL, stringBytes, [stringData length]*8);
     
     //grabs image input in function
-    CGImageRef imageRef = img.CGImage;
-    img = [[UIImage alloc] initWithCGImage:imageRef];
     NSData *picData = UIImagePNGRepresentation(img);
     img = [[UIImage alloc] initWithData:picData];
-    imageRef = img.CGImage;
+    CGImageRef imageRef = img.CGImage;
     NSUInteger nWidth = CGImageGetWidth(imageRef);
     NSUInteger nHeight = CGImageGetHeight(imageRef);
     NSUInteger nBytesPerRow = CGImageGetBytesPerRow(imageRef);
@@ -104,7 +102,6 @@
     
     //draws new image from data, returns said image
     bmContext = CGBitmapContextCreate(imgBytes, img.size.width, img.size.height, 8,nBytesPerRow, colorSpace, kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
-    
     CGImageRef newImageRef = CGBitmapContextCreateImage(bmContext);
     UIImage *imageNew = [[UIImage alloc] initWithCGImage:newImageRef];
     picData = UIImagePNGRepresentation(imageNew);

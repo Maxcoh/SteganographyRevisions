@@ -98,7 +98,6 @@
 		FB47D58819900E890022E2BA /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				FB30D4D319917763007CC626 /* AppIcon50x50.png */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -141,6 +140,7 @@
 			children = (
 				FB47D58819900E890022E2BA /* iPad */,
 				FB0B688019800D8D007CC4A4 /* cat.png */,
+				FB30D4D319917763007CC626 /* AppIcon50x50.png */,
 				FB9B66AD1979567200967439 /* Classes */,
 				FB9B66AA197955DC00967439 /* App Delegate */,
 				FB9B66AC197955F300967439 /* Interface */,

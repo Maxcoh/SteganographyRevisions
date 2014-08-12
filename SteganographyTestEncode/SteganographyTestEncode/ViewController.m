@@ -26,32 +26,56 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)Share:(id)sender {
-    [self displayTwitterComposerSheet];
+    [self displaySMSComposerSheet];
     
 }
 
 
--(void)displayTwitterComposerSheet
+-(void)displaySMSComposerSheet
 {
-    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
-    {
-        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:@"@StratiApp "];
-        [tweetSheet addImage:_imgView.image];
-        [self presentViewController:tweetSheet animated:YES completion:nil];
+    MFMessageComposeViewController *picker = [[MFMessageComposeViewController alloc] init];
+    
+    if([MFMessageComposeViewController canSendText]) {
+    [picker setMessageComposeDelegate:self];
+    NSData *myData = UIImagePNGRepresentation(_imgView.image);
+	[picker addAttachmentData:myData typeIdentifier:@"public.data" filename:@"image.png"];
+        
     }
-    else
-    {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"You can't send a tweet right now, make sure your device has an internet  connection and you have at least one Twitter account setup" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:@"Take a photo", @"Choose existing", nil];
-        [alert show];
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult) result
+{
+    switch (result) {
+        case MessageComposeResultCancelled:
+            break;
+            
+        case MessageComposeResultFailed:
+        {
+            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to send SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [warningAlert show];
+            break;
+        }
+            
+        case MessageComposeResultSent:
+            break;
+            
+        default:
+            break;
     }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)displayMailComposerSheet
 {
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	picker.mailComposeDelegate = self;
-	
+    NSArray *recipentsArray = [[NSArray alloc]initWithObjects:@"rixu9oozzoww0@tumblr.com", nil];
+    
+	[picker setToRecipients:recipentsArray];
+    
 	[picker setSubject:@"My Encoded Image!"];
 	
 	// Attach an image to the email
@@ -59,7 +83,7 @@
 	[picker addAttachmentData:myData mimeType:@"image/png" fileName:@"encodedImage"];
 	
 	// Fill out the email body text
-	NSString *emailBody = @"I encoded this image myself!";
+	NSString *emailBody = @"";
 	[picker setMessageBody:emailBody isHTML:NO];
 	
 	[self presentViewController:picker animated:YES completion:NULL];

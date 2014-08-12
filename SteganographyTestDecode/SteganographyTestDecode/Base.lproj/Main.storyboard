@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-205" y="-7"/>
         </scene>
-        <!--View Controller - Stegasaurus Rext Messaging-->
+        <!--View Controller - Strati-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rBm-iC-pDI" secondAttribute="bottom" constant="9" id="9Fg-fg-2DY"/>
                             <constraint firstAttribute="bottom" secondItem="P9V-PE-mn3" secondAttribute="bottom" constant="47" id="Bk4-KW-SHJ"/>
@@ -61,7 +61,7 @@
                             <constraint firstItem="g4i-Cg-1c8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="TRu-1n-dHD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Stegasaurus Rext Messaging" id="qgJ-de-9GH">
+                    <navigationItem key="navigationItem" title="Strati" id="qgJ-de-9GH">
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="8Ee-nI-NWy">
                             <connections>
                                 <action selector="camera:" destination="vXZ-lx-hvc" id="nNj-cR-UO0"/>
@@ -75,6 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="249" y="-7"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
